@@ -1,7 +1,4 @@
 pandas==2.1.4
 pycaret==3.3.2
 streamlit==1.37.1
-<<<<<<< HEAD
-=======
 protobuf==4.25.4
->>>>>>> e22159cf63d95588d2b528e40238ff257191151b
