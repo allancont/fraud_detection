@@ -3,9 +3,19 @@ import pandas as pd
 from pycaret.classification import load_model, predict_model
 from datetime import datetime
 import logging
+import os
+
+# Diretório onde o arquivo de log será salvo
+log_dir = "E:\\Meus Documentos\\Allan\\Clientes\\fraud_detection"
+
+# Certifique-se de que o diretório exista
+os.makedirs(log_dir, exist_ok=True)
+
+# Caminho completo para o arquivo de log
+log_file = os.path.join(log_dir, 'fraud_detection.log')
 
 # Configurar o logging
-logging.basicConfig(filename='fraud_detection.log', level=logging.INFO, 
+logging.basicConfig(filename=log_file, level=logging.INFO, 
                     format='%(asctime)s:%(levelname)s:%(message)s')
 
 st.title('MÓDULO DE DETECÇÃO DE FRAUDE')
